@@ -1,0 +1,4 @@
+@object.str.@string
+@object.num.@number
+@object.arr.@array.@string
+@object.obj.@object.arr.@array.@object.key.@string

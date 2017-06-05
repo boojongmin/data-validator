@@ -1,0 +1,10 @@
+{
+	"str": "hello world!",
+	"num": 1,
+	"arr": ["1", "2", "3"],
+	"obj": {
+		"arr": [
+			{"key": "value"}, {"key": "value"}
+		]
+	}
+}

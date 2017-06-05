@@ -1,0 +1,31 @@
+buildscript {
+    ext.kotlin_version = '1.1.2-4'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: "kotlin"
+
+group 'com.data-validator'
+version = '0.0.1'
+
+
+sourceSets {
+    main.kotlin.srcDirs += 'src/main/kotlin'
+    main.java.srcDirs += 'src/main/java'
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile 'org.assertj:assertj-core:3.8.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.8.1'
+    compile 'junit:junit:4.12'
+}
