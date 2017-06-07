@@ -11,6 +11,8 @@ buildscript {
 }
 
 apply plugin: "kotlin"
+apply plugin: "maven"
+
 
 group 'com.data-validator'
 version = '0.0.1'
@@ -21,6 +23,7 @@ sourceSets {
     main.java.srcDirs += 'src/main/java'
 }
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 dependencies {
