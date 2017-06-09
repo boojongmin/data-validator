@@ -1,12 +1,16 @@
 package com.datavalidator
 
+import com.datavalidator.TestUtil.readJson
+import com.datavalidator.TestUtil.readRule
+import com.fasterxml.jackson.databind.ObjectMapper
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import java.net.URL
 import java.nio.file.Files
 import java.nio.file.Paths
 
-class JsonParseTest {
+object TestUtil {
+    val mapper = ObjectMapper()
     fun readJson(): String {
 //        val chaset = Charset.forName("UTF-8")
         val path: URL = javaClass.classLoader.getResource("target.json")
@@ -26,6 +30,13 @@ class JsonParseTest {
         return result.trim()
     }
 
+    fun parseJsonString(jsonStr: String): Any {
+        return mapper.readValue(jsonStr, Any::class.java)
+    }
+
+}
+
+class JsonParseTest {
     @Test
     fun testCreateParseJson() {
         val ruleValidator = RuleValidator(readRule())

@@ -1,0 +1,7 @@
+@object.top.@object.title.@string
+@object.top.@object.url.@string
+@object.top.@object.more_text.@string
+@object.body.@array
+@object.body.@array.@object.image_url.@string
+@object.body.@array.@object.title.@string
+@object.body.@array.@object.url.@string

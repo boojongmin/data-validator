@@ -1,0 +1,22 @@
+{
+  "top": {
+    "title": "오늘의 추천 연재",
+    "url": "http://m.media.daum.net/m/media/series",
+    "more_text": "더보기"
+  },
+  "body": [
+    {
+      "image_url": "//t1.daumcdn.net/section/oc/aeb567fb27fd47ba90935300e4bd680c",
+      "title": "50주년 맞은 '6일 전쟁'",
+      "url": "http://m.media.daum.net/m/media/series/4140?selectedNewsId=20170609000257492"
+    },{
+      "image_url": "//t1.daumcdn.net/section/oc/1101346ebe5e4878bac88362fd008403",
+      "title": "'문제 있어서 회사 옮긴다' 인식 바뀌어야",
+      "url": "http://m.media.daum.net/m/media/series/289768?selectedNewsId=20170609030244577"
+    },{
+      "image_url": "//t1.daumcdn.net/section/oc/dc01cb0b76e64daa94f2b45c64383759",
+      "title": "판테라가 내뿜는 그루브메탈",
+      "url": "http://m.media.daum.net/m/media/series/336629?selectedNewsId=20170609060405096"
+    }
+  ]
+}
